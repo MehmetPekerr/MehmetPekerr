@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mehmet,Peker,İnönü,Üniversitesi"/>
+    <meta name="description" content="Benim sayfam"/>
+    <meta name="author" content="mehmet"/>
+    <link rel="shortcut icon" href="images.jpg" />
+    <script src="https://kit.fontawesome.com/8bd5027e2e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body{background-color: beige;margin: 0%;}
+        header{
+    z-index: 2;
+    position: sticky;
+    width: 98%;
+    height: 100px;
+    background-color:goldenrod;
+    top:0;
+    border: outset steelblue 15px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+ul{
+    margin-top: 30px;
+    margin-left: 20px ;
+    display:inline;
+    
+
+}
+a:hover{
+width: auto;
+height: auto;
+background-color: yellow;
+color: purple;
+border: 4px solid steelblue;
+text-decoration: none;
+border-radius: 10px;
+}
+a:active{
+    color: yellow;
+    background-color: steelblue;
+}
+
+
+a:visited{color: blue;background-color:yellow ;text-decoration: none;}
+a:visited:hover{color: purple;}
+
+h2{ text-decoration: underline;}
+
+#icon{
+        font-size: 50px;
+        color: red;
+        background-color: white;
+        opacity: 0.5;
+        float: left;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    #icon:hover{
+        font-size: 50px;
+        color: blue;
+        background-color: purple;
+        opacity: 0.8;
+        border-radius: 10px;
+    }
+        .li1,.link:visited{color: darkblue;}
+
+.li1,.link{
+
+list-style-type: none;
+text-decoration: none;
+margin-left: 20px;
+margin-top: 35px;
+font-size: 25px;
+word-spacing: 10px;
+font-size: 22px;
+line-height: 0px;
+color: darkblue;
+vertical-align: 0px;
+}
+#kutu{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: relative;
+            float: right;
+            border: 2px solid black;
+            border-radius: 30px;
+            animation: ornek 5s linear 0.5s infinite alternate;
+            z-index: -1;
+            box-shadow: 12px 12px 7px gray;
+            margin-right: 20px;
+        }
+        @keyframes ornek{
+          
+
+            0%{background-color: yellow;left: 0;top: 0;}
+            25%{background-color: red;left: -200px;top: 0;}
+            50%{background-color: black;left: -200px;top:100px }
+            75%{background-color: white;left: 0;top: 100px;}
+            100%{background-color: blue;left: 0;top: 0;}
+        }
+
+a{text-decoration: none;color: gold;display:inline;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    a:visited{text-decoration: none;color: gold;display:inline;}
+
+    li{font-size: 15px;margin-left: 25px;}
+    .yazı{font-size: 18px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;list-style-type:circle;}
+    p{font-weight: 600;color:darkorange;margin-left: 30px; font-size: 18px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;list-style-type:circle;}
+    footer{color: goldenrod;background-color: midnightblue;width: 100%; height: 900px;}
+
+    li::selection {color: blueviolet; background-color: black;}
+    p::selection {color: blueviolet; background-color: black;}
+    footer::selection {color: blueviolet; background-color: black;}
+    body::selection {color: blueviolet; background-color: black;}
+    a::selection {color: blueviolet; background-color: black;}
+    b::selection {color: blueviolet; background-color: black;}
+
+    input[type=text]{border: 5px solid red;}
+    input[id=text1]:hover{border: 5px solid sienna;}
+    input[id=text1]:focus{border: 5px solid green;}
+    </style>
+</head>
+<body>
+    <header >
+        <ul>
+        <li id="icon" class="fa-solid fa-robot" href="bağlantı linki"></li>
+        <li class="li1" style="float: left;"> <a class="link" href="Sitem.html"><b> Anasayfa </b></a></li>
+        <li class="li1" style="float: left;"> <a class="link" href="Hakkımda.html"><b> Hakkımda </b></a></li>
+        <li class="li1" style="float: left;"> <a class="link" href="Projeler.html"><b> Projeler </b></a></li>
+        <li class="li1" style="float: left;"> <a class="link" href="İletişim.html"><b> İletişim </b></a></li>
+        </ul>
+        <br><br><br>
+        
+        </header >
+        
+<pre style="font-size: 20px;margin-top: -30px;" >
+<ul>
+    <li style="font-weight: 700;font-size: larger;list-style-type: none;">Projeler</li>
+    <li class="yazı">Hayvanın yemeğinin bittiğini sahibinin telefonuna bildiren kap.</li>
+    <li class="yazı">Tüm banka hesaplarındaki toplam parayı ve borcu gösteren birleşik banka uygulaması.</li>                                 <div style="margin-bottom: 600px;" id="kutu"></div>
+    <li class="yazı">Kaynamaya başladığını telefona bildiren tencere.</li>
+    <li class="yazı">Her yere radar koymak yerine aracın hızını ve plakasını trafik polisine bildiren araç içi sistem.</li>
+    <li class="yazı">Gönüllü kişilerden oluşan global ücretsiz dil öğrenme uygulaması. Öğretmenler de olacak reklam vererek para kazanacaklar.</li>
+    <li class="yazı">Doğal ortamlara otel yapılmasını ve beton yığınlarını önlemek amacıyla çadır alanları kurmak ve en uygun çadır alanını belirleyen uygulama geliştirmek.</li>
+</ul>
+</pre>
+<p >İlerde daha güzel projelerim olacak beklemede kalın.</p>
+
+<br><br><br>
+<footer ><br><span style="font-size: 15px;margin-left: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Copyright &copy; by Mehmet Peker...</span> <br><br>
+
+
+
+    <form action="#" method="post">
+
+    
+      <span style="font-size: 20px;margin-left: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">E-posta:</span>  <input style="width: 200px;color: white;background-color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="text1" type="text" value="02210224054@ogr.inonu.edu.tr" readonly> <br><br>
+    
+        <form action=""></form>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9200.299285299736!2d38.43618507669206!3d38.33379150016852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076384f417eed7b%3A0xf0135f4a7646a348!2zxLBuw7Zuw7wgw5xuaXZlcnNpdGVzaQ!5e0!3m2!1str!2str!4v1649697737800!5m2!1str!2str" width="600" height="450" style="border:0;margin-left: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+
+
+
+</footer>
+<script>
+    console.log("Bu sayfanın ilk sürümü 12/04/2022 tarihinde tamamlanmıştır.");
+</script>
+</body>
+</html>
+<!-- :D :D :D -->
+<!-- Bu sayfanın ilk sürümü 12/04/2022 tarihinde tamamlanmıştır. -->
