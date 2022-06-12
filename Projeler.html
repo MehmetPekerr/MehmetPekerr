@@ -8,8 +8,13 @@
     <meta name="description" content="Benim sayfam"/>
     <meta name="author" content="mehmet"/>
     <link rel="shortcut icon" href="images.jpg" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8bd5027e2e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
+    
     <style>
         body{background-color: beige;margin: 0%;}
         header{
@@ -125,6 +130,111 @@ a{text-decoration: none;color: gold;display:inline;font-family: 'Segoe UI', Taho
     input[type=text]{border: 5px solid red;}
     input[id=text1]:hover{border: 5px solid sienna;}
     input[id=text1]:focus{border: 5px solid green;}
+
+
+    .carousel-one {
+        max-width: 1000px;
+        margin: auto;
+        position: relative;
+    }
+ 
+    .carousel-one .mySlides {
+        display: none;
+    }
+ 
+    .carousel-one .mySlides img {
+        width: 100%;
+    }
+ 
+    .carousel-one .mySlides .caption-text {
+        color: goldenrod;
+        font-weight: 900;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 38px;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+    }
+ 
+    .carousel-one .mySlides .number-text {
+        color: black;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0px;
+  
+    }
+ 
+    .carousel-one .fade-In {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+ 
+    .carousel-one .prev-slide,
+    .carousel-one .next-slide {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 0px 3px 3px 0px;
+        transition: 0.6s ease;
+    }
+ 
+    .carousel-one .prev-slide:hover,
+    .carousel-one .next-slide:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        text-decoration: none;
+    }
+ 
+    .carousel-one .next-slide {
+        right: 0px;
+        border-radius: 3px 0px 0px 3px;
+    }
+    
+    .dots{
+        text-align: center;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+ 
+    .dot:hover {
+        background-color: #717171;
+    }
+ 
+    .active {
+        background-color: #717171;
+    }
+ 
+    @keyframes fade {
+        from {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+            filter: alpha(opacity=40);
+            opacity: 0.4;
+        }
+ 
+        to {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: alpha(opacity=100);
+            opacity: 1;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -140,18 +250,52 @@ a{text-decoration: none;color: gold;display:inline;font-family: 'Segoe UI', Taho
         
         </header >
         
-<pre style="font-size: 20px;margin-top: -30px;" >
-<ul>
-    <li style="font-weight: 700;font-size: larger;list-style-type: none;">Projeler</li>
-    <li class="yazı">Hayvanın yemeğinin bittiğini sahibinin telefonuna bildiren kap.</li>
-    <li class="yazı">Tüm banka hesaplarındaki toplam parayı ve borcu gösteren birleşik banka uygulaması.</li>                                 <div style="margin-bottom: 600px;" id="kutu"></div>
-    <li class="yazı">Kaynamaya başladığını telefona bildiren tencere.</li>
-    <li class="yazı">Her yere radar koymak yerine aracın hızını ve plakasını trafik polisine bildiren araç içi sistem.</li>
-    <li class="yazı">Gönüllü kişilerden oluşan global ücretsiz dil öğrenme uygulaması. Öğretmenler de olacak reklam vererek para kazanacaklar.</li>
-    <li class="yazı">Doğal ortamlara otel yapılmasını ve beton yığınlarını önlemek amacıyla çadır alanları kurmak ve en uygun çadır alanını belirleyen uygulama geliştirmek.</li>
-</ul>
-</pre>
-<p >İlerde daha güzel projelerim olacak beklemede kalın.</p>
+        <div class="carousel-one">
+            <div class="mySlides fade-In">
+                <div class="number-text">1/6</div>
+                <img src="foto1.jpg" />
+                <div class="caption-text">Hayvanın yemeğinin bittiğini sahibinin telefonuna bildiren kap.</div>
+            </div>
+            <div class="mySlides fade-In">
+                <div class="number-text">2/6</div>
+                <img src="foto2.jpg" />
+                <div class="caption-text">Tüm banka hesaplarındaki toplam parayı ve borcu gösteren birleşik banka uygulaması.</div>
+            </div>
+            <div class="mySlides fade-In">
+                <div class="number-text">3/6</div>
+                <img src="foto3.jpg" />
+                <div class="caption-text">Kaynamaya başladığını telefona bildiren tencere.
+                </div>
+            </div>
+            <div class="mySlides fade-In">
+                <div class="number-text">4/6</div>
+                <img src="foto4.jpg" />
+                <div class="caption-text">Her yere radar koymak yerine aracın hızını ve plakasını trafik polisine bildiren araç içi sistem.</div>
+            </div>
+            <div class="mySlides fade-In">
+                <div class="number-text">5/6</div>
+                <img src="foto5.jpg" />
+                <div class="caption-text">Gönüllü kişilerden oluşan global ücretsiz dil öğrenme uygulaması. Öğretmenler de olacak reklam vererek para kazanacaklar.</div>
+            </div>
+            <div class="mySlides fade-In">
+                <div class="number-text">6/6</div>
+                <img src="foto6.jpg" />
+                <div class="caption-text">Doğal ortamlara otel yapılmasını ve beton yığınlarını önlemek amacıyla çadır alanları kurmak ve en uygun çadır alanını belirleyen uygulama geliştirmek.</div>
+            </div>
+
+            <a class="prev-slide">&#10094;</a>
+            <a class="next-slide">&#10095;</a>
+        </div>
+        <br />
+         
+        <div class="dots">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+            <span class="dot dot4"></span>
+            <span class="dot dot5"></span>
+            <span class="dot dot6"></span>
+        </div>
 
 <br><br><br>
 <footer ><br><span style="font-size: 15px;margin-left: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Copyright &copy; by Mehmet Peker...</span> <br><br>
@@ -161,7 +305,7 @@ a{text-decoration: none;color: gold;display:inline;font-family: 'Segoe UI', Taho
     <form action="#" method="post">
 
     
-      <span style="font-size: 20px;margin-left: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">E-posta:</span>  <input style="width: 200px;color: white;background-color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="text1" type="text" value="02210224054@ogr.inonu.edu.tr" readonly> <br><br>
+      <span style="font-size: 20px;margin-left: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">E-posta:</span>  <input style="width: 240px;color: white;background-color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="text1" type="text" value="02210224054@ogr.inonu.edu.tr" readonly> <br><br>
     
         <form action=""></form>
 
@@ -172,6 +316,72 @@ a{text-decoration: none;color: gold;display:inline;font-family: 'Segoe UI', Taho
 </footer>
 <script>
     console.log("Bu sayfanın ilk sürümü 12/04/2022 tarihinde tamamlanmıştır.");
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+ 
+    var slideIndex = 1;
+    showSlides(slideIndex);
+ 
+    $(".prev-slide").click(function() {
+        plusSlides(-1);
+    });
+ 
+    $(".next-slide").click(function() {
+        plusSlides(1);
+    });
+ 
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+ 
+    $(".dot1").click(function() {
+        currentSlide(1);
+    });
+    $(".dot2").click(function() {
+        currentSlide(2);
+    });
+    $(".dot3").click(function() {
+        currentSlide(3);
+    });
+    $(".dot4").click(function() {
+        currentSlide(4);
+    });
+    $(".dot5").click(function() {
+        currentSlide(5);
+    });
+    $(".dot6").click(function() {
+        currentSlide(6);
+    });
+ 
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    
+    function showSlides(n) {
+        var i;
+        var slides = $(".mySlides");
+        var dots = $(".dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+ 
+        for (var i = 0; i < dots.length; i++) {
+            dots[i].className.replace("active", "");
+            dots[i].classList.remove("active");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+        
+    }
 </script>
 </body>
 </html>
